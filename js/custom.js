@@ -225,7 +225,49 @@
 			$('.case-study-images li.show').removeClass("show");
 			$('.case-study-images li:nth-child(10)').addClass("show");
 			$('.case-study-name:nth-child(10)').addClass('active');
-		})	
+		})
+		$('.case-study-name:nth-child(11)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(11)').addClass("show");
+			$('.case-study-name:nth-child(11)').addClass('active');
+		})
+		$('.case-study-name:nth-child(12)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(12)').addClass("show");
+			$('.case-study-name:nth-child(12)').addClass('active');
+		})
+		$('.case-study-name:nth-child(13)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(13)').addClass("show");
+			$('.case-study-name:nth-child(13)').addClass('active');
+		})
+		$('.case-study-name:nth-child(14)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(14)').addClass("show");
+			$('.case-study-name:nth-child(14)').addClass('active');
+		})
+		$('.case-study-name:nth-child(15)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(15)').addClass("show");
+			$('.case-study-name:nth-child(15)').addClass('active');
+		})
+		$('.case-study-name:nth-child(16)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(16)').addClass("show");
+			$('.case-study-name:nth-child(16)').addClass('active');
+		})
+		$('.case-study-name:nth-child(17)').on('mouseenter touchstart', function () {
+			$('.case-study-name.active').removeClass('active');
+			$('.case-study-images li.show').removeClass("show");
+			$('.case-study-images li:nth-child(17)').addClass("show");
+			$('.case-study-name:nth-child(17)').addClass('active');
+		})
 		$('.case-study-name:nth-child(1)').trigger('mouseenter')	
 		
 		
