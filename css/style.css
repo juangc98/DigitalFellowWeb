@@ -434,6 +434,9 @@ a:hover {
 	z-index: 1;
 }
 
+.service-description {
+	font-size: 18px;
+}
 
 /* #Navigation
 ================================================== */
@@ -2775,8 +2778,11 @@ figure.vimeo a img, figure.youtube a img {
 	}
 }
 
+/*TABLA LOGOS*/
 
-
+div div.padfix {
+	padding: 80px 0;
+}
 
 
 
