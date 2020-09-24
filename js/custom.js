@@ -91,12 +91,11 @@
 	var app = function () {
 		var body = document.querySelector('body');
 		var menu = document.querySelector('.menu-icon');
-		var menuItems = document.querySelectorAll('.animsition-link');
-		var menuitems = undefined;
+		var menuItems = document.querySelectorAll('.menu-boton');
 
-		var init = function init() {
+		/*var init = function init() {
 			applyListeners();
-		};
+		};*/
 
 		function openClose(){
 			body.classList.toggle('nav-active');
@@ -104,7 +103,9 @@
 
 		menu.addEventListener('click', openClose);
 
-		menuitems.document.querySelectorAll('.menu-boton').addEventListener('click', openClose);
+		menuItems.forEach(item => {
+			item.addEventListener('click', openClose)
+		})
 
 		var toggleClass = function toggleClass(element, stringClass) {
 			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
