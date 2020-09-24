@@ -496,7 +496,6 @@ a:hover {
 .cd-header.is-fixed {
 	position: fixed;
 	top: -100px;
-	background-color: rgba(8,17,36, 0.96);
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
@@ -702,8 +701,11 @@ body.nav-active .cd-header.is-fixed {
 	-o-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 }
+
 body.nav-active .cd-header.is-visible {
+	
 }
+
 body.nav-active .menu-icon__line {
 	background-color: #fff;
 	-webkit-transform: translate(0px, 0px) rotate(-45deg);
@@ -985,7 +987,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	border-radius: 50%;
 	position: relative;
 	background: rgba(255, 255, 255, 1);
-	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1) 
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
 	left: 0;
 	top: -9px;
 	cursor: pointer;
@@ -2784,7 +2786,9 @@ div div.padfix {
 	padding: 80px 0;
 }
 
-
+.animsition {
+	opacity: 1;
+} 
 
 
 

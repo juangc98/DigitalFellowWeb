@@ -1,5 +1,4 @@
 (function($) { "use strict";
-	
 		
 	//Page cursors
 
@@ -90,23 +89,22 @@
 	//Navigation
 
 	var app = function () {
-		var body = undefined;
-		var menu = undefined;
-		var menuItems = undefined;
+		var body = document.querySelector('body');
+		var menu = document.querySelector('.menu-icon');
+		var menuItems = document.querySelectorAll('.animsition-link');
+		var menuitems = undefined;
 
 		var init = function init() {
-			body = document.querySelector('body');
-			menu = document.querySelector('.menu-icon');
-			menuItems = document.querySelectorAll('.nav__list-item');
-
 			applyListeners();
 		};
 
-		var applyListeners = function applyListeners() {
-			menu.addEventListener('click', function () {
-				return toggleClass(body, 'nav-active');
-			});
-		};
+		function openClose(){
+			body.classList.toggle('nav-active');
+		}
+
+		menu.addEventListener('click', openClose);
+
+		menuitems.document.querySelectorAll('.menu-boton').addEventListener('click', openClose);
 
 		var toggleClass = function toggleClass(element, stringClass) {
 			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
@@ -123,8 +121,8 @@
 		$(".animsition").animsition({	  
 			inClass               :   'fade-in-down-sm',
 			outClass              :   'fade-out-down-sm',
-			inDuration            :    400,
-			outDuration           :    400,
+			inDuration            :    200,
+			outDuration           :    200,
 			linkElement           :   '.animsition-link', 
 			// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
 			loading               :    true,
