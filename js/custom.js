@@ -116,7 +116,7 @@
 			else element.classList.add(stringClass);
 		};
 
-		init();
+		/*init();*/
 	}();
 
 
